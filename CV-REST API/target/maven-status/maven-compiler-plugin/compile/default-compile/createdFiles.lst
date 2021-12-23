@@ -1,0 +1,15 @@
+dao\ResourcesManager.class
+dao\CompanyDao.class
+dao\EducationDao.class
+rest\CompanyRest.class
+dao\ContactDao.class
+service\UserService.class
+dao\UserDao.class
+service\CompanyService.class
+rest\UserRest.class
+data\Company.class
+rest\ApplicationConfig.class
+data\User.class
+data\Contact.class
+data\Education.class
+exception\MyException.class
