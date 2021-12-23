@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/GhostWhite"
+    tools:context=".Details">
+
+    <RelativeLayout
+        android:id="@+id/navigacija"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Grey"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/app_name"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/DarkGrey"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+
+            />
+        <ImageButton
+            android:id="@+id/goHome"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/home"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+
+<ScrollView
+    android:id="@+id/sw1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/navigacija">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/education"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:text="@string/education"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/bachelor"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:padding="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/borders"
+        android:hint="@string/bachelor"
+        android:layout_below="@id/education"
+        android:minWidth="300dp"/>
+    <EditText
+        android:id="@+id/master"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:padding="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bachelor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/master"
+        android:background="@drawable/borders"
+        android:minWidth="300dp"/>
+    <EditText
+        android:id="@+id/doctoral"
+        android:layout_width="wrap_content"
+        android:inputType="text"
+        android:padding="7dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/master"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/doctoral"
+        android:background="@drawable/borders"
+        android:minWidth="300dp"/>
+    <EditText
+        android:id="@+id/languages"
+        android:layout_width="wrap_content"
+        android:inputType="text"
+        android:padding="7dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/doctoral"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/languages"
+        android:background="@drawable/borders"
+        android:minWidth="300dp"/>
+    <EditText
+        android:id="@+id/highSchool"
+        android:layout_width="wrap_content"
+        android:inputType="text"
+        android:padding="7dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/languages"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/highSchool"
+        android:background="@drawable/borders"
+        android:minWidth="300dp"/>
+    <TextView
+        android:id="@+id/basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/highSchool"/>
+
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/contact"
+            android:layout_below="@id/basic"
+            android:textSize="20dp"
+            />
+        <RelativeLayout
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp"
+            android:background="@drawable/borders"
+            android:layout_below="@id/contact"
+            >
+            <ImageView
+                android:id="@+id/phoneICON"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/phone"/>
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/phone"
+                android:layout_toRightOf="@id/phoneICON"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp"
+            android:background="@drawable/borders"
+            android:layout_below="@id/phone">
+            <ImageView
+                android:id="@+id/emailICON"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/email"/>
+            <EditText
+                android:id="@+id/emailAdress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email"
+                android:layout_toRightOf="@id/emailICON"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linkedin"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp"
+            android:background="@drawable/borders"
+            android:layout_below="@id/email">
+            <ImageView
+                android:id="@+id/linkedinICON"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/linkedin"/>
+            <EditText
+                android:id="@+id/linkedinProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/linkedin"
+                android:layout_toRightOf="@id/linkedinICON"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/skype"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp"
+            android:background="@drawable/borders"
+            android:layout_below="@id/linkedin">
+            <ImageView
+                android:id="@+id/skypeICON"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/skype"/>
+            <EditText
+                android:id="@+id/skypeProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/skype"
+                android:layout_toRightOf="@id/skypeICON"/>
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/basic2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/skype"/>
+        <Button
+            android:id="@+id/updateUser"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/basic2"
+            android:text="@string/update"/>
+        <Button
+            android:id="@+id/addUser"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/updateUser"
+            android:layout_below="@id/basic2"
+            android:text="@string/submit"/>
+
+        <TextView
+            android:id="@+id/out_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addUser"/>
+
+
+</RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

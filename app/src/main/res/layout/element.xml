@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="7dp"
+        android:hint="@string/companyName"
+        android:background="@drawable/borders"
+        android:minWidth="300dp"/>
+    <EditText
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/companyName"
+        android:background="@drawable/borders"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/period"
+        android:minWidth="300dp"/>
+    <EditText
+        android:id="@+id/period"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/position"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/borders"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/position"
+        android:minWidth="300dp"/>
+    <TextView
+        android:id="@+id/basic1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/period"/>
+
+
+
+</RelativeLayout>
